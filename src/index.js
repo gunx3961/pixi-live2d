@@ -33,6 +33,7 @@ import MatrixStack from './lib/MatrixStack';
  * @param [options.defaultMotionGroup="idle"] {string}
  * @param [options.priorityDefault=1] {number}
  * @param [options.priorityForce=3] {number}
+ * @param [options.modelHomeDir='./'] {string}
  * @param [options.audioPlayer=3] {function} Custom audio player, pass (filename, rootPath) as parameters
  *
  */
@@ -53,6 +54,7 @@ export default class Live2DSprite extends PIXI.Sprite {
       lipSyncWithSound: true,
       randomMotion: true,
       defaultMotionGroup: "idle",
+      modelHomeDir: "./",
       audioPlayer: null
     }, options);
 

@@ -19,7 +19,7 @@ export default function LAppModel(options)
     this.randomMotionGroup = null;
     this.randomMotionPriority = null;
 
-    this.modelHomeDir = "";
+    this.modelHomeDir = this.options.modelHomeDir;
     this.modelSetting = null;
     this.tmpMatrix = [];
 
@@ -36,7 +36,7 @@ LAppModel.prototype.load = function(gl, modelDefine, callback)
     this.setUpdating(true);
     this.setInitialized(false);
 
-    this.modelHomeDir = './';
+    // this.modelHomeDir = './';
 
     this.modelSetting = new ModelSettingJson(modelDefine);
 
